@@ -66,9 +66,6 @@ public class BinaryTree {
         printPathsRecur(node, path, 0);
     }
   
-    /* Recursive helper function -- given a node, and an array containing
-       the path from the root node up to but not including this node,
-       print out all the root-leaf paths. */
     void printPathsRecur(NodeTree b, int path[], int pathLen) 
     {
         if (b == null)
@@ -89,7 +86,6 @@ public class BinaryTree {
         }
     }
   
-    /* Utility that prints out an array on a line */
     void printArray(int ints[], int len) 
     {
         int i;
