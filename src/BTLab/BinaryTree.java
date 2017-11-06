@@ -3,6 +3,7 @@ package BTLab;
 public class BinaryTree {
 
     public static NodeTree root;
+    
 
     public BinaryTree() {
         this.root = null;
@@ -225,24 +226,21 @@ public class BinaryTree {
         searchGetPaths(root, x);
     }
     
-//    public void searchGetPaths(NodeTree root,int x){
-//        if(contains(data, x)==true){
-//            if(root.getData()<x){
-//            System.out.print(root.getData()+" ");
-//            searchGetPaths(root.getRight(), x);  
-//            }
-//
-//            else if(root.getData()> x){
-//                System.out.print(root.getData()+" ");
-//                searchGetPaths(root.getLeft(), x);
-//            }
-//
-//            else if(root.getData()== x){
-//                System.out.print(root.getData()+" ");
-//            }
-//        }
-//        else{
-//            System.out.println("data kosong");
-//        }
-//    }
+    public void searchGetPaths(NodeTree root,int x){
+        
+            if(root.getData()<x){
+            System.out.print(root.getData()+" ");
+            searchGetPaths(root.getRight(), x);  
+            }
+
+            else if(root.getData()> x){
+                System.out.print(root.getData()+" ");
+                searchGetPaths(root.getLeft(), x);
+            }
+
+            else if(root.getData()== x){
+                System.out.print(root.getData()+" ");
+            }
+        
+    }
 }

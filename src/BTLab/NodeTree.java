@@ -12,15 +12,15 @@ public class NodeTree {
         right = null;
     }
 
-//    public int getData() {
-//        return data;
-//    }
-//
-//    public NodeTree getLeft() {
-//        return left;
-//    }
-//
-//    public NodeTree getRight() {
-//        return right;
-//    }
+    public int getData() {
+        return data;
+    }
+
+    public NodeTree getLeft() {
+        return left;
+    }
+
+    public NodeTree getRight() {
+        return right;
+    }
 }
